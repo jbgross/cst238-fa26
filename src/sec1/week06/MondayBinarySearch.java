@@ -13,11 +13,16 @@ public class MondayBinarySearch {
         print(data);
         Arrays.sort(data);
         print(data);
+        System.out.println("is there a 7? " + binarySearch(data, 7));
+        System.out.println("is there a 97? " + binarySearch(data, 97));
+        System.out.println("is there a -7? " + binarySearch(data, -7));
+        System.out.println("is there a 65? " + binarySearch(data, 65));
+        System.out.println("is there a 98? " + binarySearch(data, 98));
     }
 
     public static int binarySearch(int [] a, int searchValue) {
         int lowerBound = 0;
-        int upperBound = a.length;
+        int upperBound = a.length - 1;
         while(lowerBound <= upperBound) {
             int middleIndex = (lowerBound + upperBound)/2;
             if(a[middleIndex] == searchValue) {
