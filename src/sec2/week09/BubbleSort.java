@@ -79,6 +79,6 @@ public class BubbleSort {
 //        int [] a = rand.ints(size, 0, 20).toArray();
 //        return a;
 
-        return (new Random(-7)).ints(size, 0, 20).toArray();
+        return (new Random(-7)).ints(size, 0, 21).toArray();
     }
 }
