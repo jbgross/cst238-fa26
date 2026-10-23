@@ -9,18 +9,12 @@ public class InsertionSort {
     }
 
     public static void insertionSort(int [] a) {
-        for (int k = 1; k < a.length; k++) {
+        for (int k = 0; k < a.length; k++) {
             int currentIndex = k;
-
-//            while (currentIndex > 0 && a[currentIndex] < a[currentIndex - 1]) {
-//                // swap
-//                int temp = a[currentIndex];
-//                a[currentIndex] = a[currentIndex - 1];
-//                a[currentIndex - 1] = temp;
-//                currentIndex--;
-//
-//            }
-            for (int i = currentIndex - 1; i >= 0 && currentIndex >= 0; i--) {
+            // this is what I wrote
+//            for (int i = currentIndex + 1; i >= 0; i--) {
+            // this is what I should have written
+            for (int i = currentIndex - 1; i >= 0; i--) {
                 if (a[currentIndex] < a[i]) {
                     int temp = a[currentIndex];
                     a[currentIndex] = a[i];
