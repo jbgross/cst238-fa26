@@ -1,4 +1,4 @@
-package sec1;
+package sec1.week11;
 
 public class Review {
     private int foo = 0;
